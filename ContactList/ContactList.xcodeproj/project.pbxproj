@@ -67,6 +67,7 @@
 				590B0A8D29519F3800C7CEC0 /* Storyboards */,
 				590B0A8E29519F6600C7CEC0 /* ViewControllers */,
 				590B0A9229519FA100C7CEC0 /* Models */,
+				590B0A952951A1DF00C7CEC0 /* Services */,
 				590B0A8C29519F2000C7CEC0 /* SupportFiles */,
 				590B0A8F29519F7400C7CEC0 /* Assets */,
 				590B0A80295074AA00C7CEC0 /* Info.plist */,
@@ -114,9 +115,16 @@
 			isa = PBXGroup;
 			children = (
 				590B0A9029519F9D00C7CEC0 /* Person.swift */,
-				590B0A9329519FDE00C7CEC0 /* DataStore.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		590B0A952951A1DF00C7CEC0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				590B0A9329519FDE00C7CEC0 /* DataStore.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
