@@ -57,14 +57,40 @@
                     <view key="view" contentMode="scaleToFill" id="eI6-bl-PDP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OXM-oh-XIc">
+                                <rect key="frame" x="16" y="200" width="382" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wlC-8V-bhA">
+                                <rect key="frame" x="16" y="254" width="382" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="hLr-Wd-6TT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hLr-Wd-6TT" firstAttribute="trailing" secondItem="wlC-8V-bhA" secondAttribute="trailing" constant="16" id="3df-pK-6e9"/>
+                            <constraint firstItem="wlC-8V-bhA" firstAttribute="top" secondItem="OXM-oh-XIc" secondAttribute="bottom" constant="30" id="3jY-DZ-HvU"/>
+                            <constraint firstItem="OXM-oh-XIc" firstAttribute="leading" secondItem="hLr-Wd-6TT" secondAttribute="leading" constant="16" id="EEe-6Q-SrU"/>
+                            <constraint firstItem="wlC-8V-bhA" firstAttribute="leading" secondItem="hLr-Wd-6TT" secondAttribute="leading" constant="16" id="HQA-Rf-Zwq"/>
+                            <constraint firstItem="OXM-oh-XIc" firstAttribute="top" secondItem="hLr-Wd-6TT" secondAttribute="top" constant="60" id="kD1-H8-N9U"/>
+                            <constraint firstItem="hLr-Wd-6TT" firstAttribute="trailing" secondItem="OXM-oh-XIc" secondAttribute="trailing" constant="16" id="x9k-yE-KdN"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yhB-jp-uHw"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="wlC-8V-bhA" id="d24-w6-4nd"/>
+                        <outlet property="phoneLabel" destination="OXM-oh-XIc" id="N83-g3-v4e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JOU-9f-LpT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3822" y="88"/>
+            <point key="canvasLocation" x="3821.739130434783" y="87.723214285714278"/>
         </scene>
         <!--Item-->
         <scene sceneID="4ul-cC-8xQ">
