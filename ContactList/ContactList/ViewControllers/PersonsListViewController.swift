@@ -11,7 +11,6 @@ final class PersonsListViewController: UITableViewController {
     
     var persons: [Person]!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -43,6 +42,5 @@ final class PersonsListViewController: UITableViewController {
         guard let personInfoVC = segue.destination as? PersonInfoViewController else { return }
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
         personInfoVC.person = persons[indexPath.row]
-        
     }
 }
