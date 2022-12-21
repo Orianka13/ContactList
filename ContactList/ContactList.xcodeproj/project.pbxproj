@@ -17,6 +17,7 @@
 		590B0A8B29519DD000C7CEC0 /* PersonInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590B0A8A29519DD000C7CEC0 /* PersonInfoViewController.swift */; };
 		590B0A9129519F9D00C7CEC0 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590B0A9029519F9D00C7CEC0 /* Person.swift */; };
 		590B0A9429519FDE00C7CEC0 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590B0A9329519FDE00C7CEC0 /* DataStore.swift */; };
+		590B0A99295342BB00C7CEC0 /* ContactTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590B0A98295342BB00C7CEC0 /* ContactTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		590B0A8A29519DD000C7CEC0 /* PersonInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfoViewController.swift; sourceTree = "<group>"; };
 		590B0A9029519F9D00C7CEC0 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		590B0A9329519FDE00C7CEC0 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		590B0A98295342BB00C7CEC0 /* ContactTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				590B0A8629519BD600C7CEC0 /* PersonsListViewController.swift */,
 				590B0A8829519D2100C7CEC0 /* DetailPersonsListViewController.swift */,
 				590B0A8A29519DD000C7CEC0 /* PersonInfoViewController.swift */,
+				590B0A98295342BB00C7CEC0 /* ContactTabBarController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				590B0A9129519F9D00C7CEC0 /* Person.swift in Sources */,
 				590B0A8B29519DD000C7CEC0 /* PersonInfoViewController.swift in Sources */,
 				590B0A8929519D2100C7CEC0 /* DetailPersonsListViewController.swift in Sources */,
+				590B0A99295342BB00C7CEC0 /* ContactTabBarController.swift in Sources */,
 				590B0A73295074A800C7CEC0 /* AppDelegate.swift in Sources */,
 				590B0A8729519BD600C7CEC0 /* PersonsListViewController.swift in Sources */,
 				590B0A75295074A800C7CEC0 /* SceneDelegate.swift in Sources */,

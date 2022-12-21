@@ -7,14 +7,16 @@
 
 import UIKit
 
-class PersonsListViewController: UITableViewController {
+final class PersonsListViewController: UITableViewController {
     
-    private let persons = Person.getPersons()
+    var persons: [Person]!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        guard let tabBar = tabBarController as? ContactTabBarController else { return }
+        persons = tabBar.persons
     }
     
     // MARK: - Table view data source
@@ -41,5 +43,6 @@ class PersonsListViewController: UITableViewController {
         guard let personInfoVC = segue.destination as? PersonInfoViewController else { return }
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
         personInfoVC.person = persons[indexPath.row]
+        
     }
 }

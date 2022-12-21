@@ -181,10 +181,10 @@
             </objects>
             <point key="canvasLocation" x="2043" y="832"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Contact Tab Bar Controller-->
         <scene sceneID="bs3-er-uLh">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="HAa-nY-cMc" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="HAa-nY-cMc" customClass="ContactTabBarController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7NQ-bf-F3A">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>

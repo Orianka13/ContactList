@@ -7,14 +7,15 @@
 
 import UIKit
 
-class DetailPersonsListViewController: UITableViewController {
+final class DetailPersonsListViewController: UITableViewController {
     
-    private let persons = Person.getPersons()
+    var persons: [Person]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       
+        
+        guard let tabBar = tabBarController as? ContactTabBarController else { return }
+        persons = tabBar.persons
     }
 
     // MARK: - Table view data source
