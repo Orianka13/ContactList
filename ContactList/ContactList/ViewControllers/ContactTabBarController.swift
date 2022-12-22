@@ -9,17 +9,17 @@ import UIKit
 
 final class ContactTabBarController: UITabBarController {
     
-    let persons = Person.getPersons()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setPersons()
+        setupViewControllers()
     }
     
-    private func setPersons() {
-        guard let vc = viewControllers else { return }
-        for viewController in vc {
+    private func setupViewControllers() {
+        guard let viewControllers = viewControllers else { return }
+        let persons = Person.getPersons()
+        
+        for viewController in viewControllers {
             if let navigationVC = viewController as? UINavigationController {
                 if let personsListVC = navigationVC.topViewController as? PersonsListViewController {
                     personsListVC.persons = persons

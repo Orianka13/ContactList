@@ -20,19 +20,23 @@ extension Person {
     
     static func getPersons() -> [Person] {
         
-        let dataStore = DataStore()
         var persons: [Person] = []
         
-        let firstNamesShuffled = dataStore.firstNames.shuffled()
-        let secondNamesShuffled = dataStore.secondNames.shuffled()
-        let phoneNumbersShuffled = dataStore.phoneNumbers.shuffled()
-        let emailsShuffled = dataStore.emails.shuffled()
+        let firstNamesShuffled = DataStore.shared.firstNames.shuffled()
+        let secondNamesShuffled = DataStore.shared.secondNames.shuffled()
+        let phoneNumbersShuffled = DataStore.shared.phoneNumbers.shuffled()
+        let emailsShuffled = DataStore.shared.emails.shuffled()
         
-        for index in 0..<dataStore.firstNames.endIndex {
+        let iterationCount = min(firstNamesShuffled.count,
+                                 secondNamesShuffled.count,
+                                 phoneNumbersShuffled.count,
+                                 emailsShuffled.count)
+        
+        for index in 0..<iterationCount {
             let person = Person(firstName: firstNamesShuffled[index],
-                   secondName: secondNamesShuffled[index],
-                   email: emailsShuffled[index],
-                   phoneNumber: phoneNumbersShuffled[index])
+                                secondName: secondNamesShuffled[index],
+                                email: emailsShuffled[index],
+                                phoneNumber: phoneNumbersShuffled[index])
             persons.append(person)
         }
         return persons

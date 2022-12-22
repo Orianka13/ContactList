@@ -21,7 +21,6 @@ final class DetailPersonsListViewController: UITableViewController {
         2
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let person = persons[indexPath.section]
@@ -42,5 +41,14 @@ final class DetailPersonsListViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         persons[section].fullName
+    }
+}
+
+
+// MARK: - UITableViewDelegate
+
+extension DetailPersonsListViewController {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
