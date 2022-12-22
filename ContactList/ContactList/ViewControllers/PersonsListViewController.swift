@@ -11,13 +11,6 @@ final class PersonsListViewController: UITableViewController {
     
     var persons: [Person]!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        guard let tabBar = tabBarController as? ContactTabBarController else { return }
-        persons = tabBar.persons
-    }
-    
     // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

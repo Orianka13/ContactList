@@ -10,14 +10,7 @@ import UIKit
 final class DetailPersonsListViewController: UITableViewController {
     
     var persons: [Person]!
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        guard let tabBar = tabBarController as? ContactTabBarController else { return }
-        persons = tabBar.persons
-    }
-
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
